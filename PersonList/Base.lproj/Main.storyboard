@@ -34,7 +34,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="UdY-hx-uS2">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UdY-hx-uS2" id="KTo-Xr-5Vk">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -47,11 +47,11 @@
                             <outlet property="delegate" destination="yqC-Aw-GCu" id="Jy4-cV-fzz"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="People" id="ufa-IP-p9S"/>
+                    <navigationItem key="navigationItem" title="People" id="z00-6x-kc4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaU-t6-5S8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="594" y="588"/>
+            <point key="canvasLocation" x="1406" y="600"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tfQ-V6-byS">
@@ -64,12 +64,31 @@
                     </tabBar>
                     <connections>
                         <segue destination="8Pi-ci-EuY" kind="relationship" relationship="viewControllers" id="dJO-6K-UJd"/>
-                        <segue destination="yqC-Aw-GCu" kind="relationship" relationship="viewControllers" id="WDc-QG-WJN"/>
+                        <segue destination="AzR-DO-t7j" kind="relationship" relationship="viewControllers" id="WDc-QG-WJN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="joy-eC-zVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-125" y="255"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="RIi-w7-cDp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AzR-DO-t7j" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="People" id="ufa-IP-p9S"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UAl-fH-3MA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yqC-Aw-GCu" kind="relationship" relationship="rootViewController" id="rUn-47-qRF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P9i-Ys-f8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="594" y="600"/>
         </scene>
     </scenes>
 </document>

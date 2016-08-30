@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173577F35C07864F4F34DC34 /* Pods_PersonList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20C84E26033A249ED9D8C86 /* Pods_PersonList.framework */; };
+		1A64A6731D750DA500171A1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A64A6721D750DA500171A1D /* GoogleService-Info.plist */; };
+		1A64A6741D750DA500171A1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A64A6721D750DA500171A1D /* GoogleService-Info.plist */; };
+		1A7684221D76265F0036027B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7684211D76265F0036027B /* Person.swift */; };
 		1AC5A8AD1D7359A9007AC881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5A8AC1D7359A9007AC881 /* AppDelegate.swift */; };
 		1AC5A8B21D7359A9007AC881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5A8B01D7359A9007AC881 /* Main.storyboard */; };
 		1AC5A8B51D7359A9007AC881 /* PersonList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5A8B31D7359A9007AC881 /* PersonList.xcdatamodeld */; };
@@ -16,6 +20,8 @@
 		1AC5A8D01D7359AA007AC881 /* PersonListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5A8CF1D7359AA007AC881 /* PersonListUITests.swift */; };
 		1AC5A8DE1D735AF7007AC881 /* CreatePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5A8DD1D735AF7007AC881 /* CreatePerson.swift */; };
 		1AC5A8E01D735B4A007AC881 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5A8DF1D735B4A007AC881 /* PeopleTableViewController.swift */; };
+		826B8C35C2FF1ABA5CD8CDC8 /* Pods_PersonListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A8AB59A7E32F8366325935 /* Pods_PersonListTests.framework */; };
+		9E5EEBB1981B824EB1210050 /* Pods_PersonListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625D80C30A687E5E96017EBC /* Pods_PersonListUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DFD84B9040D063F3533B869 /* Pods-PersonListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonListTests/Pods-PersonListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A64A6721D750DA500171A1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A7684211D76265F0036027B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1AC5A8A91D7359A9007AC881 /* PersonList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC5A8AC1D7359A9007AC881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AC5A8B11D7359A9007AC881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +60,14 @@
 		1AC5A8D11D7359AA007AC881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC5A8DD1D735AF7007AC881 /* CreatePerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePerson.swift; sourceTree = "<group>"; };
 		1AC5A8DF1D735B4A007AC881 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+		43A8AB59A7E32F8366325935 /* Pods_PersonListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D0BFBBF3E015927C332CA3 /* Pods-PersonList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonList/Pods-PersonList.debug.xcconfig"; sourceTree = "<group>"; };
+		6119F10AD4866269C0459B9D /* Pods-PersonListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonListUITests/Pods-PersonListUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		625D80C30A687E5E96017EBC /* Pods_PersonListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFEDA0B7115FE03FD1650FA /* Pods-PersonListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonListUITests/Pods-PersonListUITests.release.xcconfig"; sourceTree = "<group>"; };
+		87A58128D58FAA5D1C48B818 /* Pods-PersonList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonList.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonList/Pods-PersonList.release.xcconfig"; sourceTree = "<group>"; };
+		A20C84E26033A249ED9D8C86 /* Pods_PersonList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE616EE39000DA1D79115A51 /* Pods-PersonListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonListTests/Pods-PersonListTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173577F35C07864F4F34DC34 /* Pods_PersonList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826B8C35C2FF1ABA5CD8CDC8 /* Pods_PersonListTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +91,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5EEBB1981B824EB1210050 /* Pods_PersonListUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A7684231D7626650036027B /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				1A7684211D76265F0036027B /* Person.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
 		1AC5A8A01D7359A9007AC881 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +113,8 @@
 				1AC5A8C31D7359AA007AC881 /* PersonListTests */,
 				1AC5A8CE1D7359AA007AC881 /* PersonListUITests */,
 				1AC5A8AA1D7359A9007AC881 /* Products */,
+				547B91AB44B14BE8BB7F5E77 /* Pods */,
+				DA7F3E88CC403EF7B7A2A4FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +131,7 @@
 		1AC5A8AB1D7359A9007AC881 /* PersonList */ = {
 			isa = PBXGroup;
 			children = (
+				1A7684231D7626650036027B /* Modal */,
 				1AC5A8AC1D7359A9007AC881 /* AppDelegate.swift */,
 				1AC5A8DD1D735AF7007AC881 /* CreatePerson.swift */,
 				1AC5A8DF1D735B4A007AC881 /* PeopleTableViewController.swift */,
@@ -109,6 +140,7 @@
 				1AC5A8B81D7359AA007AC881 /* LaunchScreen.storyboard */,
 				1AC5A8BB1D7359AA007AC881 /* Info.plist */,
 				1AC5A8B31D7359A9007AC881 /* PersonList.xcdatamodeld */,
+				1A64A6721D750DA500171A1D /* GoogleService-Info.plist */,
 			);
 			path = PersonList;
 			sourceTree = "<group>";
@@ -131,6 +163,29 @@
 			path = PersonListUITests;
 			sourceTree = "<group>";
 		};
+		547B91AB44B14BE8BB7F5E77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52D0BFBBF3E015927C332CA3 /* Pods-PersonList.debug.xcconfig */,
+				87A58128D58FAA5D1C48B818 /* Pods-PersonList.release.xcconfig */,
+				0DFD84B9040D063F3533B869 /* Pods-PersonListTests.debug.xcconfig */,
+				BE616EE39000DA1D79115A51 /* Pods-PersonListTests.release.xcconfig */,
+				6119F10AD4866269C0459B9D /* Pods-PersonListUITests.debug.xcconfig */,
+				7EFEDA0B7115FE03FD1650FA /* Pods-PersonListUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA7F3E88CC403EF7B7A2A4FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A20C84E26033A249ED9D8C86 /* Pods_PersonList.framework */,
+				43A8AB59A7E32F8366325935 /* Pods_PersonListTests.framework */,
+				625D80C30A687E5E96017EBC /* Pods_PersonListUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AC5A8D41D7359AA007AC881 /* Build configuration list for PBXNativeTarget "PersonList" */;
 			buildPhases = (
+				8AF47FF7857E77989714B8C1 /* [CP] Check Pods Manifest.lock */,
 				1AC5A8A51D7359A9007AC881 /* Sources */,
 				1AC5A8A61D7359A9007AC881 /* Frameworks */,
 				1AC5A8A71D7359A9007AC881 /* Resources */,
+				3EC7A91612AF5302715D0043 /* [CP] Embed Pods Frameworks */,
+				6714B7F39809921E3E95DB4F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AC5A8D71D7359AA007AC881 /* Build configuration list for PBXNativeTarget "PersonListTests" */;
 			buildPhases = (
+				28AE5859C5010263BB86F9A7 /* [CP] Check Pods Manifest.lock */,
 				1AC5A8BC1D7359AA007AC881 /* Sources */,
 				1AC5A8BD1D7359AA007AC881 /* Frameworks */,
 				1AC5A8BE1D7359AA007AC881 /* Resources */,
+				85F99C43A2B17952F6FF850E /* [CP] Embed Pods Frameworks */,
+				1BCE7C0A039451423AE8A983 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AC5A8DA1D7359AA007AC881 /* Build configuration list for PBXNativeTarget "PersonListUITests" */;
 			buildPhases = (
+				B372988C742E5BE31F3D2F62 /* [CP] Check Pods Manifest.lock */,
 				1AC5A8C71D7359AA007AC881 /* Sources */,
 				1AC5A8C81D7359AA007AC881 /* Frameworks */,
 				1AC5A8C91D7359AA007AC881 /* Resources */,
+				679BAB4C5480514C838FD8A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC5A8BA1D7359AA007AC881 /* LaunchScreen.storyboard in Resources */,
+				1A64A6731D750DA500171A1D /* GoogleService-Info.plist in Resources */,
 				1AC5A8B71D7359AA007AC881 /* Assets.xcassets in Resources */,
 				1AC5A8B21D7359A9007AC881 /* Main.storyboard in Resources */,
 			);
@@ -245,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A64A6741D750DA500171A1D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,11 +322,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BCE7C0A039451423AE8A983 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonListTests/Pods-PersonListTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28AE5859C5010263BB86F9A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3EC7A91612AF5302715D0043 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonList/Pods-PersonList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6714B7F39809921E3E95DB4F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonList/Pods-PersonList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		679BAB4C5480514C838FD8A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonListUITests/Pods-PersonListUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85F99C43A2B17952F6FF850E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonListTests/Pods-PersonListTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AF47FF7857E77989714B8C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B372988C742E5BE31F3D2F62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1AC5A8A51D7359A9007AC881 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7684221D76265F0036027B /* Person.swift in Sources */,
 				1AC5A8B51D7359A9007AC881 /* PersonList.xcdatamodeld in Sources */,
 				1AC5A8AD1D7359A9007AC881 /* AppDelegate.swift in Sources */,
 				1AC5A8E01D735B4A007AC881 /* PeopleTableViewController.swift in Sources */,
@@ -407,6 +596,7 @@
 		};
 		1AC5A8D51D7359AA007AC881 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D0BFBBF3E015927C332CA3 /* Pods-PersonList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PersonList/Info.plist;
@@ -418,6 +608,7 @@
 		};
 		1AC5A8D61D7359AA007AC881 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A58128D58FAA5D1C48B818 /* Pods-PersonList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PersonList/Info.plist;
@@ -429,6 +620,7 @@
 		};
 		1AC5A8D81D7359AA007AC881 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DFD84B9040D063F3533B869 /* Pods-PersonListTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PersonListTests/Info.plist;
@@ -441,6 +633,7 @@
 		};
 		1AC5A8D91D7359AA007AC881 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE616EE39000DA1D79115A51 /* Pods-PersonListTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PersonListTests/Info.plist;
@@ -453,6 +646,7 @@
 		};
 		1AC5A8DB1D7359AA007AC881 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6119F10AD4866269C0459B9D /* Pods-PersonListUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PersonListUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -464,6 +658,7 @@
 		};
 		1AC5A8DC1D7359AA007AC881 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EFEDA0B7115FE03FD1650FA /* Pods-PersonListUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PersonListUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -492,6 +687,7 @@
 				1AC5A8D61D7359AA007AC881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AC5A8D71D7359AA007AC881 /* Build configuration list for PBXNativeTarget "PersonListTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +696,7 @@
 				1AC5A8D91D7359AA007AC881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AC5A8DA1D7359AA007AC881 /* Build configuration list for PBXNativeTarget "PersonListUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +705,7 @@
 				1AC5A8DC1D7359AA007AC881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

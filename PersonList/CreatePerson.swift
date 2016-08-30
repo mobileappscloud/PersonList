@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import Firebase
 
 class CreatePerson: UIViewController, UITextFieldDelegate
 {
@@ -35,7 +36,6 @@ class CreatePerson: UIViewController, UITextFieldDelegate
         tf.placeholder = "Enter Date of Birth..."
         tf.textAlignment = .Center
         tf.translatesAutoresizingMaskIntoConstraints = false
-        tf.keyboardType = .NumberPad
         return tf
     }()
     
@@ -90,7 +90,32 @@ class CreatePerson: UIViewController, UITextFieldDelegate
     
     func handleCreatePerson()
     {
-        print("We created the person!")
+        guard let firstname = firstNameField.text, lastname = lastNameField.text, dateOfBirth = dateOfBirthField.text, zipcode = Int(zipcodeField.text!) else
+        {
+            print("Form not valid")
+            return
+        }
+        
+        
+        let properties: [String: AnyObject] = ["firstname": firstname, "lastname": lastname, "Date of Birth": dateOfBirth, "Zipcode": zipcode]
+        updateFirebaseWithProperties(properties)
+        self.view.endEditing(true)
+    }
+    
+    func updateFirebaseWithProperties(properties: [String:AnyObject])
+    {
+        let ref = FIRDatabase.database().reference().child("Users")
+        let childRef = ref.childByAutoId()
+        childRef.updateChildValues(properties) { (error, ref) in
+            
+            if error != nil
+            {
+                print("There was an error uploading the data \(error)")
+                return
+            }
+            
+            print("We were able to store the data into Firebase with the reference \(ref)")
+        }
     }
 
     override func viewDidLoad()
