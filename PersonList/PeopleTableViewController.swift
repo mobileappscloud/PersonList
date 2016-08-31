@@ -25,12 +25,14 @@ class PeopleTableViewController: UITableViewController
         
         tableView.delegate = self
         tableView.dataSource = self
+       
     }
     
     override func viewDidAppear(animated: Bool)
     {
         tableView.reloadData()
         print(names)
+        print("We have \(names.count) items")
     }
     
     func observePeople()
@@ -43,7 +45,11 @@ class PeopleTableViewController: UITableViewController
             {
                 let fullname = "\(firstname) \(lastname)"
                 self.names.append(fullname)
-                self.tableView.reloadData()
+                
+                dispatch_async(dispatch_get_main_queue())
+                {
+                    self.tableView.reloadData()
+                }
             }
             
         }, withCancelBlock: nil)
@@ -54,6 +60,7 @@ class PeopleTableViewController: UITableViewController
         if let firstname = snapshot.value?.objectForKey("firstname"), lastname = snapshot.value?.objectForKey("lastname"), dateOfBirth = snapshot.value?.objectForKey("Date of Birth"), zipcode = snapshot.value?.objectForKey("Zipcode")
         {
             print("We deleted the person \(firstname) \(lastname) with the details: \(dateOfBirth), \(zipcode)")
+            self.tableView.reloadData()
         }
             
         }, withCancelBlock: nil)
@@ -86,10 +93,37 @@ class PeopleTableViewController: UITableViewController
     {
         if editingStyle == .Delete
         {
+            let ref = FIRDatabase.database().reference().child("Users")
+            ref.observeEventType(.ChildAdded, withBlock: { (snapshot) in
+                
+                if let firstname = snapshot.value?.objectForKey("firstname"), lastname = snapshot.value?.objectForKey("lastname")
+                {
+                    let fullname = "\(firstname) \(lastname)"
+                    let currentName = self.names[indexPath.row]
+                    
+                    if fullname == currentName
+                    {
+                        print("We have a match")
+                        let currentKey = snapshot.key
+                        ref.child(currentKey).removeValue()
+                        
+                        dispatch_async(dispatch_get_main_queue())
+                        {
+                            self.tableView.reloadData()
+                        }
+                    }
+                    
+                }
+                
+                }, withCancelBlock: nil)
+        }
+        
             names.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            
-            //Delete from firebase            
         }
     }
-}
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        
+    }
