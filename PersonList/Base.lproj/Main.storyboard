@@ -33,13 +33,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="UdY-hx-uS2">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="UdY-hx-uS2">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UdY-hx-uS2" id="KTo-Xr-5Vk">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="qTf-7F-ZYf" kind="show" identifier="show" id="eX8-sS-n1n"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -52,6 +55,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaU-t6-5S8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1406" y="600"/>
+        </scene>
+        <!--Edit Person-->
+        <scene sceneID="tNC-W4-Uuz">
+            <objects>
+                <viewController id="UMC-r0-Z0k" customClass="EditViewController" customModule="PersonList" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rWq-el-XNC"/>
+                        <viewControllerLayoutGuide type="bottom" id="TB5-h5-luR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m1u-6x-xbq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Person" id="Psb-SJ-Eu9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipZ-4D-Gh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2801" y="600"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tfQ-V6-byS">
@@ -89,6 +111,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9i-Ys-f8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="594" y="600"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EXB-Kz-E05">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qTf-7F-ZYf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rPE-CX-ZeE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UMC-r0-Z0k" kind="relationship" relationship="rootViewController" id="hgl-Fa-5mP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Idb-s5-rf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111" y="600"/>
         </scene>
     </scenes>
 </document>

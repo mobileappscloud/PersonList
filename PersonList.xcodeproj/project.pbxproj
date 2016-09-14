@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		173577F35C07864F4F34DC34 /* Pods_PersonList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20C84E26033A249ED9D8C86 /* Pods_PersonList.framework */; };
+		1A400BD21D7A28A200FA8B8F /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A400BD11D7A28A200FA8B8F /* EditViewController.swift */; };
 		1A64A6731D750DA500171A1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A64A6721D750DA500171A1D /* GoogleService-Info.plist */; };
 		1A64A6741D750DA500171A1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A64A6721D750DA500171A1D /* GoogleService-Info.plist */; };
 		1A7684221D76265F0036027B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7684211D76265F0036027B /* Person.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0DFD84B9040D063F3533B869 /* Pods-PersonListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonListTests/Pods-PersonListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A400BD11D7A28A200FA8B8F /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		1A64A6721D750DA500171A1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A7684211D76265F0036027B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		1AC5A8A91D7359A9007AC881 /* PersonList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A400BD31D7A28B100FA8B8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AC5A8DD1D735AF7007AC881 /* CreatePerson.swift */,
+				1AC5A8DF1D735B4A007AC881 /* PeopleTableViewController.swift */,
+				1A400BD11D7A28A200FA8B8F /* EditViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		1A7684231D7626650036027B /* Modal */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,10 +143,9 @@
 		1AC5A8AB1D7359A9007AC881 /* PersonList */ = {
 			isa = PBXGroup;
 			children = (
+				1A400BD31D7A28B100FA8B8F /* View */,
 				1A7684231D7626650036027B /* Modal */,
 				1AC5A8AC1D7359A9007AC881 /* AppDelegate.swift */,
-				1AC5A8DD1D735AF7007AC881 /* CreatePerson.swift */,
-				1AC5A8DF1D735B4A007AC881 /* PeopleTableViewController.swift */,
 				1AC5A8B01D7359A9007AC881 /* Main.storyboard */,
 				1AC5A8B61D7359AA007AC881 /* Assets.xcassets */,
 				1AC5A8B81D7359AA007AC881 /* LaunchScreen.storyboard */,
@@ -452,6 +463,7 @@
 			files = (
 				1A7684221D76265F0036027B /* Person.swift in Sources */,
 				1AC5A8B51D7359A9007AC881 /* PersonList.xcdatamodeld in Sources */,
+				1A400BD21D7A28A200FA8B8F /* EditViewController.swift in Sources */,
 				1AC5A8AD1D7359A9007AC881 /* AppDelegate.swift in Sources */,
 				1AC5A8E01D735B4A007AC881 /* PeopleTableViewController.swift in Sources */,
 				1AC5A8DE1D735AF7007AC881 /* CreatePerson.swift in Sources */,

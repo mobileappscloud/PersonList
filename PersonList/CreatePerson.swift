@@ -117,7 +117,7 @@ class CreatePerson: UIViewController, UITextFieldDelegate
             print("We were able to store the data into Firebase with the reference \(ref)")
         }
     }
-
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

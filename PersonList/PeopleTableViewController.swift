@@ -56,12 +56,34 @@ class PeopleTableViewController: UITableViewController
         
         ref.observeEventType(.ChildRemoved, withBlock:
         { (snapshot) in
-        
+                                                                                                                                                                                            
         if let firstname = snapshot.value?.objectForKey("firstname"), lastname = snapshot.value?.objectForKey("lastname"), dateOfBirth = snapshot.value?.objectForKey("Date of Birth"), zipcode = snapshot.value?.objectForKey("Zipcode")
         {
             print("We deleted the person \(firstname) \(lastname) with the details: \(dateOfBirth), \(zipcode)")
+            let fullname = "\(firstname) \(lastname)"
+            if let index = self.names.indexOf(fullname)
+            {
+                self.names.removeAtIndex(index)
+            }
             self.tableView.reloadData()
         }
+            
+        }, withCancelBlock: nil)
+        
+        ref.observeEventType(.ChildChanged, withBlock: { (snapshot) in
+            
+            print("One of the entries were changed so we're reloading the table view")
+            
+            if let firstname = snapshot.value?.objectForKey("firstname"), lastname = snapshot.value?.objectForKey("lastname")
+            {
+                let fullname = "\(firstname) \(lastname)"
+                print(fullname)
+                
+                dispatch_async(dispatch_get_main_queue())
+                {
+                    self.tableView.reloadData()
+                }
+            }
             
         }, withCancelBlock: nil)
     }
@@ -115,15 +137,24 @@ class PeopleTableViewController: UITableViewController
                     
                 }
                 
-                }, withCancelBlock: nil)
+            }, withCancelBlock: nil)
         }
         
-            names.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        }
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        
+        if segue.identifier == "show"
+        {
+            let nav = segue.destinationViewController as! UINavigationController
+            let editVC = nav.topViewController as! EditViewController
+            
+            if let selectedIndexPath = tableView.indexPathForSelectedRow
+            {
+                let fullname = names[selectedIndexPath.row]
+                editVC.fullname = fullname
+            }
+        }
     }
+}
+
